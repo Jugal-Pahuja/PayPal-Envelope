@@ -1,0 +1,11 @@
+# Google Cloud buildpacks settings (Cloud Run).
+# Install dev dependencies too: packages/paypal-rest-sdk builds itself with tshy during install,
+# and the API and website run TypeScript directly with tsx.
+[[build.env]]
+name = "NPM_CONFIG_INCLUDE"
+value = "dev"
+
+# Pin Node 20, the version the project is built and tested on.
+[[build.env]]
+name = "GOOGLE_NODEJS_VERSION"
+value = "20.x.x"
