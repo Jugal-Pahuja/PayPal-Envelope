@@ -8,4 +8,4 @@ value = "dev"
 # Pin Node 20, the version the project is built and tested on.
 [[build.env]]
 name = "GOOGLE_NODEJS_VERSION"
-value = "20.x.x"
+value = "22.x.x"
