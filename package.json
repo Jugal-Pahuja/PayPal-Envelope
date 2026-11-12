@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "scripts": {
+    "gcp-build": "npm run db:generate",
     "db:generate": "npm run generate -w @paypalvault/db",
     "db:migrate": "npm run migrate -w @paypalvault/db",
     "db:deploy": "npm run deploy -w @paypalvault/db",
